@@ -1,3 +1,9 @@
 *.iml
+
 *.class
+*.classpath
+.idea
+out
+.setting
+
 
