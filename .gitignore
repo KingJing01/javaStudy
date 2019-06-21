@@ -4,6 +4,5 @@
 *.classpath
 .idea
 out
-.setting
-
+.settings
 
