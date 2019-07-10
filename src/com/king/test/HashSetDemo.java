@@ -5,6 +5,7 @@ import java.util.HashSet;
 import java.util.Iterator;
 import java.util.LinkedHashSet;
 import java.util.List;
+import java.util.Set;
 
 public class HashSetDemo {
 
@@ -13,11 +14,10 @@ public class HashSetDemo {
         List<String> list = Arrays.asList(arr);
         // 不保证顺序行
         HashSet<String> hashSet = new HashSet<>();
+        // 保证有序
         LinkedHashSet<String> linkedHashSet = new LinkedHashSet<>();
-        for (String data:list) {
-            hashSet.add(data);
-            linkedHashSet.add(data);
-        }
+        hashSet.addAll(list);
+        linkedHashSet.addAll(list);
         System.out.println("------------------ hashSet  无法保证顺序 ------------------");
         for (String setData:hashSet) {
             System.out.println(setData);
