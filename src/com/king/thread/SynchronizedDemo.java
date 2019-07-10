@@ -34,7 +34,7 @@ public class SynchronizedDemo {
         SynchronizedDemo synchronizedDemo = new SynchronizedDemo();
         IncreaseClass increaseClass =  synchronizedDemo.new IncreaseClass();
         DescClass descClass  = synchronizedDemo.new DescClass();
-        for (int i = 0 ;i <2 ;i++) {
+        for (int i = 0 ;i < 2 ;i++) {
             Thread thread = new Thread(increaseClass);
             thread.start();
             Thread descThread = new Thread(descClass);
